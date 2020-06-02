@@ -38,6 +38,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
             AlertDialog.Builder dialogbox = new AlertDialog.Builder(maincontext);
             View main = LayoutInflater.from(maincontext).inflate(R.layout.delete,null);
             dialogbox.setTitle("Delete");
+            dialogbox.setView(main);
             dialogbox.setMessage("Are you sure you want to delete " + s + "?");
             dialogbox.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
